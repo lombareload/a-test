@@ -1,0 +1,16 @@
+.add {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+
+  .size {
+    width: 69%;
+  }
+  .quantity {
+    width: 29%;
+    display: flex;
+  }
+  button.add-to-cart {
+    width: 100%;
+  }
+}

@@ -1,0 +1,34 @@
+.shoe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1600px;
+  margin: auto;
+  
+  .shoe-detail {
+    padding: 2px;
+    width: 24%;
+
+    a {
+      color: #000;
+
+      &:link {
+        text-decoration: none;
+      }
+    }
+
+    .display-name {
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+
+    .division {
+      color: #888;
+      font-weight: 300;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

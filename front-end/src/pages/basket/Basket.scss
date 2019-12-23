@@ -1,0 +1,88 @@
+@import '../../mixins.scss';
+
+div.basket {
+  width: 1200px;
+  margin: auto;
+
+  .total {
+    font-weight: bold;
+  }
+  .button-link {
+    @include button();
+    width: 200px;
+  }
+  a:link {
+    text-decoration: none;
+  }
+
+  .order {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    .items {
+      width: 62%;
+      // justify-content: space-between;
+      .basket-item {
+        display: flex;
+        flex-flow: row;
+        border: solid 1px black;
+        margin-bottom: 40px;
+        .thumbnail {
+          width: 30%;
+          img {
+            width: 100%;
+          }
+        }
+        .item-info {
+          display: flex;
+          flex-flow: column;
+          justify-content: space-between;
+          width: 70%;
+          padding: 20px;
+          text-transform: uppercase;
+          font-weight: 300;
+          .stock {
+            font-weight: bold;
+          }
+          .item-quantity {
+            border: solid 1px black;
+            font-weight: bold;
+            padding: 15px;
+            width: 60px;
+          }
+        }
+        .close-button {
+          width: 30px;
+          height: 30px;
+          border: none;
+          background: white;
+          display: flex;
+          color: black;
+          position: relative;
+          fill: currentColor;
+        }
+      }
+    }
+    .summary {
+      max-height: 250px;
+      border: solid 1px #EEE;
+      padding: 10px 20px;
+      width: 30%;
+      display: flex;
+      flex-flow: column;
+      font-weight: 300;
+      justify-content: space-around;
+      > h2 {
+        margin: 0;
+      }
+      .line:last-child {
+        font-weight: bold;
+      }
+    }
+    .line {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+    }
+  }
+}

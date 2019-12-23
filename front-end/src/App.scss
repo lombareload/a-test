@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+  background-color: #000;
+  color: #FFF;
+  height: 80px;
+  width: 100%;
+  display: flex;
+
+  .App-Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    fill: currentColor;
+
+    .Logo {
+      background-image: url(https://www.adidas.com/glass/react/0e7c289/assets/img/icon-adidas-logo-white.svg);
+      background-repeat: no-repeat;
+      width: 70px;
+      display: flex;
+      margin-top: 17px;
+      margin-left: 10px;
+    }
+    .basket {
+      align-self: flex-end;
+      background-color: #0071ae;
+      width: 48px;
+      height: 48px;
+      text-decoration: none;
+      color: white;
+      svg {
+        width: 24px;
+        height: 24px;
+        color: white;
+        fill: currentColor;
+        margin-top: 10px;;
+      }
+      .basket-quantity {
+        margin-top: -1px;
+        position: relative;
+        top: -4px;
+      }
+    }
+  }
+}
+
+.Page {
+  width: 100%;
+}

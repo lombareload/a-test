@@ -1,0 +1,44 @@
+.image-viewer {
+  display: flex;
+  background-color: #ebedee;
+  height: 720px;
+  align-items: center;
+  width: 100%;
+
+  .image-strip {
+    position: relative;
+    height: 500px;
+    left: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+  
+    .thumbnail {
+      border: solid 1px;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    .selected {
+      border-width: 3px;
+      left: -2px;
+      top: -1px;
+      position: relative;
+    }
+  }
+
+  .image-main {
+    display: flex;
+    height: 100%;
+    max-height: 100vw;
+    margin: auto;
+    width: 720px;
+    img {
+      width: 720px;
+    }
+  }
+}
